@@ -3,7 +3,7 @@ def jogar():
     print("Bem vindo ao jogo da forca")
     print("**************************")
 
-palavra_secreta = "python"
+palavra_secreta = "banana"
 
 enforcou = False
 acertou = False
@@ -11,10 +11,13 @@ acertou = False
 while(not se enforcou and not acertou):
 
 chute = input("Qual letra?")
+chute = chute.strip()
 
+index = 0
 for letra in palavra_secreta:
-    if(chute == letra):
-    print(chute)
+    if(chute.upper() == letra):
+    print("Encontrei a letra {} na posiçao {}".format(letra, index))
+    index = index + 1
 
     print("jogando ...")
 
