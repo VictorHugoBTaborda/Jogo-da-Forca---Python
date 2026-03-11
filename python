@@ -30,9 +30,16 @@ print(letras_acertadas)
 
             else:
                 erros += 1
+
                 enforcou = erros == 6
 
+acertou = "_" not in letras_acertadas
         print("letras_acertadas")
+
+        if(acertou):
+            print("Você Ganhou !")
+            else:
+                print("Você Perdeu !")
 
     print("Fim do jogo")
 
